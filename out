@@ -1,0 +1,17 @@
+./bin/sim
+
+Estatisticas de proteçao Civil
+Total serviced users: 330500 from 669495 received calls
+Probabilidade de delay: 0.493768
+Media de tempo de espera em fila: 1206.132322
+Probabilidade de block: 0.506196
+Service time average: 121.714801
+
+Estatisticas do INEM
+Total serviced users: 14 from 14 received calls
+Probabilidade de delay: 0.000000
+Media de tempo de espera em fila: 0.000000
+Probabilidade de block: 0.000000
+Service time average: 191.307773
+
+Media de tempo entre chegada ao sistema e atendimento pelo INEM: 42.741179
