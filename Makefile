@@ -8,6 +8,7 @@ BIN		= bin
 SRC		= src
 
 $(BIN)/$(OUT): $(LIB)/* $(SRC)/*
+	mkdir -p $(BIN)
 	$(CC) -I$(SRC) -I$(LIB) $(LIB)/*.c $(SRC)/*.c $(CFLAGS) -o $@
 .PHONY: debug
 debug:
