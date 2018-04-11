@@ -1,5 +1,5 @@
 ./bin/sim
-
+# Example output
 Estatisticas de proteçao Civil
 Total serviced users: 330500 from 669495 received calls
 Probabilidade de delay: 0.493768
