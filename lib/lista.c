@@ -1,7 +1,7 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "lista.h"
 
-// Fun��o que remove o primeiro elemento da lista
 lista * remover (lista * apontador)
 {
 	if(!apontador) return NULL;
@@ -14,7 +14,6 @@ event nextEvent(lista **list){
     *list =  remover(*list);
     return prox;
 }
-// Fun��o que adiciona novo elemento � lista, ordenando a mesma por tempo
 lista * adicionar (lista * apontador, event prox)
 {
 	if(prox.tempo == -1) return apontador;
@@ -58,7 +57,6 @@ lista * adicionar (lista * apontador, event prox)
 		return lap;
 	}
 }
-// Fun��o que imprime no ecra todos os elementos da lista
 void imprimirEvent(event e){
 	printf("Tipo=%d\tDestino=%d\tTempo=%f\n",e.tipo,e.destino,e.tempo);
 }

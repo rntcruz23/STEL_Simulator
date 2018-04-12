@@ -13,6 +13,8 @@
 #define CIVIL           0
 #define INEM            1
 
+#define PRINT(X) {if (X == CIVIL)  printf("CIVIL"); else printf("INEM");}
+
 typedef struct _server{
     int active;                 /* Busy Channels                                            */
     int delays;                 /* Buffer Ocuppation                                        */
@@ -20,7 +22,6 @@ typedef struct _server{
     int blocks;                 /* Blocked counter                                          */
     int delayed;                /* Delayed users count                                      */
     int totalReceived;          /* Total calls arrived                                      */
-    int totalServiced;          /* Total serviced users count                               */
     double delayTime;
 
     int channels;               /* Total channels                                           */
@@ -42,3 +43,4 @@ int pick_up(server *s,event e);
 event hang_up(server *s,double currentTime);
 event addEvent(server *s,event new);
 void printServerStatus(server s);
+void resetServer(server *s);

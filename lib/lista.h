@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 typedef struct _event{
     int tipo;               /*  Type of event {CHEGADA|REDIRECT|PARTIDA}    */
     int destino;            /*  Destination of event {CIVIL|INEM}           */
